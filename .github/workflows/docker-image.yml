@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
+      
+      - name: Check variables
         run: echo USERNAME ${{ secrets.DOCKER_USERNAME }}
       
       - name: Log in to Docker Hub
